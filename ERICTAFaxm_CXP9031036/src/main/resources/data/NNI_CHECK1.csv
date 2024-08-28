@@ -1,0 +1,2 @@
+host,scriptName,remoteScriptPath,Node_type,timeout,output
+sc2,NM.sh,/opt/ericsson/nms_netconf/etc/unsupported/bin/,NO_NODE,1500,PASSED

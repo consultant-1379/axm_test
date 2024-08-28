@@ -1,0 +1,13 @@
+<suite name="AXMKGBTestSuite">
+		<test name="TestSuite">
+		<classes>
+			<class name="com.ericsson.axm.test.cases.AxmPreCheckTest">
+				<methods>
+					<include name="verifyPreCheck"></include>
+					<include name="simulationTestStart"></include>
+				</methods>
+			</class>
+		</classes>
+ </test>
+</suite>
+

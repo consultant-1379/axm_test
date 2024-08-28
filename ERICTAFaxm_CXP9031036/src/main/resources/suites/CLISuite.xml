@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CLISuite">
+	<test name="CLISuite">
+		<classes>
+			<class name="com.ericsson.axm.test.cases.CLITest" />
+		</classes>
+	</test>
+</suite>

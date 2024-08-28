@@ -1,0 +1,3 @@
+host,timeout,protocol,output
+sc2,200,SSH,PASS
+sc2,200,TELNET,PASS

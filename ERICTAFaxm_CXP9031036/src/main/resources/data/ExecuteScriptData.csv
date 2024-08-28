@@ -1,0 +1,7 @@
+host,scriptName,remoteScriptPath,Node_type,timeout,output
+sc2,AXM_FT_P1_EAC_INST_Installation_NO_NODE.pl,/home/nmsadm/script/,NO_NODE,400,PASS
+sc2,AXM_FT_P1_EAC_OM_ColdRestartMc_NO_NODE.pl,/home/nmsadm/script/,NO_NODE,400,PASS
+sc2,AXM_FT_P1_EAC_OM_OnlineMc_NO_NODE.pl,/home/nmsadm/script/,NO_NODE,400,PASS
+sc2,AXM_FT_P1_EAM_ConnectDisconnect_EHIP_BSCW.pl,/home/nmsadm/script/,BSC,400,PASS
+sc2,AXM_FT_P1_EAM_DisconnetApMode_EHIP_BSCW.pl,/home/nmsadm/script/,BSC,400,PASS
+sc2,AXM_FT_P1_EAC_OM_WarmRestartMc_NO_NODE.pl,/home/nmsadm/script/,NO_NODE,600,PASS

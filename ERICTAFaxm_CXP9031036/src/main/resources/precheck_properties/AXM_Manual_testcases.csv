@@ -1,0 +1,53 @@
+id,title,executor,result,description,priority,context,vusers
+OSS-13420_Func_3,5.3.4 AXM_FT_EAM_Con_DiscAckTo_EHIP_T,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.13 AXM_FT_EAM_EHIP_Specific_Device_EHIP_T(Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.5 AXM_FT_EAM_Con_DiscAckTo_EHIP_S(Pr.3),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.6 AXM_FT_EAM_EHIP_Specific_Device_EHIP_S(Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.45 AXM_FT_EAM_NtCommands_EHIP_S (Pr.3),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.8.9 AXM_FT_EAM_Applications_interface (Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.8.6 AXM_FT_EAM_APG43_FM_Alarms(Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.8.8 AXM_FT_EAM_C++_IDLInterface (Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.8.10 AXM_FT_EAM_Applications_File_Collection,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.9.5 AXM_FT_EAM_Process_Manager_Application,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.9.8 AXM_FT_EAM_Process_Manager_Performance,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,CR 12/109 18-FCP 103 8147/13 : EAM File Notification Distribution Improvement,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.31 AXM_FT_EAM_AlarmType_EHIP_T,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.32 AXM_FT_EAM_ReceptionSpontRep_EHIP_T,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.61 AXM_FT_EAM_ErrorReportToSM_EHIP_T,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,11.3 Test cases to verfy the default value for the parameter EHIP_NOTIFICATION_DIFF_VALUE,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.62 AXM_FT_EAM_WarmRestartMc_EHIP_T (Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.3.63 AXM_FT_EAM_OfflineOnlineMc_ EHIP_T (Pr.2),,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,6.19.14 AXM_FT_EAM_NE_password_change ,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.1 AXM_FT_EAM_ConnectDisconnect_EHIP_S,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.46 AXM_FT_EAM_AlarmType_EHIP_S,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.47 AXM_FT_EAM_ReceptionSpontRep_EHIP_S,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.48 AXM_FT_EAM_ErrorReportToSM_EHIP_S,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.51 AXM_FT_ADD_APG43_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.52 AXM_FT_Modify_APG43_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.53 AXM_FT_DELETE_APG43_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.54 AXM_FT_ADD_APG43L_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.55 AXM_FT_Modify_APG43L_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.56 AXM_FT_DELETE_APG43L_type_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.57 AXM_FT_ADD_PG_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.58 AXM_FT_MODIFY_PG_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.59 AXM_FT_DELETE_PG_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.60 AXM_FT_ADD_MODIFY_MSCBC_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,5.4.61 AXM_FT_DELETE_MSCBC_node via oex,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,"Command handling to real node, CHA.Using Secure mode, Non secure mode, Delayed response and Immediate response",,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,Element management to GRAN nodes (ssh/telnet) APG40/APG43/APG43L/STN/LanSw,,PASS,,A,,XNNNKKR
+OSS-13420_Func_3,AXM_FT_EAM_DisconnectExit_EHIP_BSC_md.pl,,PASS,,B,,XNNNKKR
+OSS-13420_Func_3,AXM_FT_EAM_APG43_Connect_Parameter_MSCBCW.pl,,PASS,,B,,XNNNKKR
+OSS-13420_Func_3,AXM_FT_EAM_ConnectDisconnect_MSCBCW.pl,,PASS,,B,,XNNNKKR
+OSS-13420_Func_3,AXM_FT_EAM_CharacterConv_EHIP_BSCW.pl,,PASS,,B,,XNNNKKR
+OSS-13420_Func_3,AXM_FT_EAM_DelRespNotLost_EHIP_T_BSCW.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAM_DisconnectExit_EHIP_BSC_md.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAM_ImResp_Reception_EHIP_S_BSCW.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAM_Process_Manager_NE.sh,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_Verify_the_execution_of_commands_in_EXEC_mode.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAC_PORT_ehm_ac_in_NO_NODE.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAC_PORT_eht_ac_in_NO_NODE.pl,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAM_Connection of node with 2 characters,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAM_Command name in CHA response file,,PASS,,B,,XVISHVC
+OSS-13420_Func_3,AXM_FT_EAC_INST_Installation,,PASS,,B,,XSAHKUI
+OSS-13420_Func_3,AXM_FT_EAC_INST_Upgrade,,PASS,,B,,XSAHKUI
+OSS-13420_Func_3,AXM_FT_EAC_INST_Uninstallation,,PASS,,B,,XSAHKUI  

@@ -1,0 +1,68 @@
+#!/usr/local/bin/expect
+#!/usr/sunos/bin/sh
+set user [lindex $argv 0]
+set pass [lindex $argv 1]
+set AXMTESTPATH [lindex $argv 2]
+set timeout 50 
+
+spawn ssh -X $user@mashost
+expect \
+   {
+       "Password:"           {send "$pass\r" }  
+	exit
+   }
+   
+expect \
+   {
+	"#" {send "tcsh\r"}
+	timeout     {Time_Out; break}
+   }
+expect \
+   {
+       ">" {send "pkgadd -d /opt/ericsson/atoss/tas/lib/X86/PERL/perl-5.8.8-sol10-x86-local\r" }
+    timeout     {Time_Out; break}
+
+   }
+expect \
+   {
+      ":" {send "all\r" }
+      exit
+
+  }
+expect \
+  {
+      "]" {send "y\r" }
+      exit
+
+  }
+expect \
+{
+	">" {send "cd $AXMTESTPATH\r"}
+	exit
+}
+expect \
+   {
+       ">" {send "/opt/ericsson/atoss/tas/PF_SERVCIF/CL/bin/prehandler.pl >& output_of_PF_SERVCIF_CL_prehandler.txt\r" }
+       timeout {Time_Out; break}
+   }
+sleep 10
+
+expect \
+        {
+        ">" { send "cp -r /opt/ericsson/lib/. /usr/lib/.\r" }
+        exit
+        }
+                                                                                                       
+#expect \
+ #  {
+  #     ">" {send "/opt/ericsson/bin/smtool -coldrestart eam_common eam_eac_idl eam_handlerAPG30 eam_handlerEMA eam_handlerIp eam_handlerIp_Mgr eam_handlerIpLx eam_handlerIpLx_Mgr eam_handlerMs eam_handlerMs_Mgr eam_handlerMtp eam_handlerText eam_nrma  -reason=\"other\" -reasontext=\"other\"\r"  }
+   #    exit
+
+   #}
+
+#expect {
+ #       ">" { set timeout 5 }
+  #      break }
+
+sleep 10
+expect eof

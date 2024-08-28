@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NNI_KGB_Suite">
+	<test name="NNI_KGB_Suite">
+		<classes>
+			<class name="com.ericsson.axm.test.cases.NNI_NM_KGB" />
+		</classes>
+	</test>
+</suite>
+<!--example-->

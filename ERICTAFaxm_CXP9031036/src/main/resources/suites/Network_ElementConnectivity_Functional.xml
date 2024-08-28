@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Network_ElementConnectivity_Functional">
+	<test name="Network_ElementConnectivity_Functional">
+		<classes>
+			<class
+				name="com.ericsson.axm.test.cases.Network_ElementConnectivity_FunctionalTest" >
+			
+				<methods>
+					<include name="verifyTheConnectivityForTheSelectedPrototype"></include>
+					<include name="verifyTrussProcessKill"></include>
+					<exclude name="simulationTestStop"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

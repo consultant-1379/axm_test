@@ -1,0 +1,103 @@
+#!/usr/local/bin/expect
+#!/usr/sunos/bin/sh
+#name=$argv 0
+set user [lindex $argv 0]
+set pass [lindex $argv 1]
+set AXMTESTPATH [lindex $argv 2]
+set timeout 240
+
+spawn ssh -X $user@mashost
+   expect \
+   {
+       "Password:"           {send "$pass\r" }  
+	exit
+   }
+ expect \
+   {
+       "{root} #" {send "tcsh\r" }
+       exit
+
+   }
+expect \
+   {
+       ">" {send "cd $AXMTESTPATH\r" }  
+       exit
+     
+   }
+ expect \
+   {
+       ">" {send "ls -lrt\r" }  
+       exit
+     
+   }
+ expect \
+   {
+       "91044657" {send "unzip ERICatoss-R1A58.pkg.zip\r" }  
+       exit
+     
+   }
+  
+ expect \
+   {
+       ">" {send "ls -lrt\r" }  
+       exit
+     
+   }
+ expect \
+   {
+       "556400640" {send "ist_run -d ERICatoss-R1A58.pkg -auto -pa -force\r" }  
+       exit
+     
+   }
+
+expect \
+   {
+       ">" {send "ist_run -d 19089-LPA_APR901982_B_R1C01.pkg -force -auto -pa\r" }
+	timeout {Time_Out; break}
+       exit
+
+   }
+ expect \
+   {
+       ">" {send "ls -lrt\r" }
+       exit
+
+   }
+
+expect \
+   {
+       ">" {send "tar -xvf eam1.tar\r" }
+       exit
+
+   }
+expect \
+   {
+      ">" {send "su - nmsadm\r" }
+       exit
+
+   }
+
+expect \
+   {
+       "#" {send "tcsh\r" }
+        exit
+   }
+ expect \
+   {
+       ">" {send "gunzip /opt/ericsson/atoss/tas/lib/X86/PERL/perl-5.8.8-sol10-x86-local.gz\r" }  
+        timeout {Time_Out; break}
+     exit
+   }
+
+expect \
+   {
+      "?" {send "y\r" } 
+  exit     
+
+  }
+ expect \
+   {
+       "{root} #" {send "exit\r" }  
+	sleep 10
+   }
+expect eof

@@ -1,0 +1,9 @@
+<schedule>
+    <!-- Network Test Suite-->
+    <item> 
+        <component>com.ericsson.axm.test.cases.CLITest</component>
+        <suite>CLISuite.xml,Network_ElementConnectivity_Functional.xml</suite> 
+        <stop_on_fail>false</stop_on_fail>
+    </item>
+
+</schedule>

@@ -1,0 +1,4 @@
+host,scriptName,remoteScriptPath,Node_type,timeout,output
+sc2,Pre_check.sh,/home/nmsadm/script/,NO_NODE,30,PASS
+sc2,testing.sh,/home/nmsadm/script/,NO_NODE,900,testing
+sc2,node_poll.pl,/home/nmsadm/script/,NO_NODE,900,Hello

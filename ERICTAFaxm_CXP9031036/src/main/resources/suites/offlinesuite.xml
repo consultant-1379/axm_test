@@ -1,0 +1,13 @@
+<suite name="OfflineSuite">
+	<test name="OfflineSuite">
+		<classes>
+			<class name="com.ericsson.axm.test.cases.AxmPreCheckTest">
+				<methods>
+					<include name="simulationTestStop"></include>
+					<exclude name="verifyPreCheck"></exclude>
+					<exclude name="simulationTestStart"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
